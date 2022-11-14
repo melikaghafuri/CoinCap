@@ -162,9 +162,18 @@ main .container .main-titles .main-info a {
   width: 110px;
 }
 
+main .container .main-info .green-text {
+  color: rgb(0, 221, 0);
+}
+
+main .container .main-info .red-text {
+  color: red;
+}
+
 main div.veiw-more {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 /* main .container .main-first span {
@@ -196,7 +205,7 @@ footer h4 {
 
 footer img {
   transition: all 0.2s;
-  background-color: transparent;
+  opacity: 0.5;
 }
 
 footer a,
@@ -226,4 +235,5 @@ footer a:hover {
 
 footer img:hover {
   transform: scale(1.01);
+  opacity: 1;
 }

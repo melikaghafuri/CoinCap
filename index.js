@@ -65,6 +65,12 @@ function renderItems(element) {
   supply.innerHTML = numeral(element.supply).format("$0.00a");
   volume.innerHTML = numeral(element.volumeUsd24Hr).format("$0.00a");
   change.innerHTML = Number(element.changePercent24Hr).toFixed(2) + "%";
+
+  if (element.changePercent24Hr > 0) {
+    change.classList.add("green-text");
+  } else {
+    change.classList.add("red-text");
+  }
 }
 
 // fetch("https://api.coincap.io/v2/assets")
