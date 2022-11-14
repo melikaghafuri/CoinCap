@@ -1,0 +1,196 @@
+* {
+  font-family: Lato;
+  outline: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container-fluid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1104px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  background: rgb(24, 198, 131);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 24px;
+  color: #fff;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav .container {
+  align-items: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 16px 20px;
+  transition: all 0.5s;
+  font-size: 14px;
+}
+
+nav a img {
+  width: 80px;
+  height: auto;
+}
+
+header {
+  background: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246))
+    rgb(255, 255, 255);
+}
+
+header .container {
+  height: 200px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 12px 32px;
+}
+
+main {
+  background-color: rgb(240, 240, 240);
+}
+
+main .container {
+  flex-direction: column;
+  position: relative;
+  top: -120px;
+  font-size: 14px;
+}
+
+main .container .main-first {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+main .container .main-first > div,
+main .container .main-first > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(218, 218, 218);
+  padding: 4px 8px;
+  margin-bottom: 0;
+}
+
+main .container .main-first span,
+main .container .main-first .main-titles a {
+  display: inline-block;
+  margin: 4px 8px;
+  width: 40px;
+  text-align: center;
+}
+
+main .container .main-first span.names,
+main .container .main-first .main-titles a.names {
+  width: 140px;
+  text-align: left;
+}
+
+main .container .main-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .container .main-info span,
+main .container .main-first .main-titles .main-info a {
+  display: inline-block;
+  justify-content: end;
+  text-align: right;
+  width: 130px;
+  margin: 4px 8px;
+}
+
+.green {
+  width: 16px !important;
+  height: 16px;
+  background: rgb(24, 198, 131);
+  border-radius: 10px;
+}
+
+main div.veiw-more {
+  display: flex;
+  justify-content: center;
+}
+
+main .container .main-first span {
+  /* background-color: red; */
+}
+
+footer {
+  background: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246))
+    rgb(255, 255, 255);
+  color: #fff;
+}
+
+footer div.container div {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+  width: 23%;
+}
+
+footer div.container div div {
+  width: 100%;
+  margin: 0;
+}
+
+footer h4 {
+  font-size: 14px;
+  font-weight: 550;
+  margin-bottom: 8px;
+}
+
+footer a,
+footer p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.596);
+  transition: all 0.3s;
+  margin-bottom: 4px;
+}
+footer img {
+  transition: all 0.2s;
+  background-color: transparent;
+}
+nav a:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.button:hover {
+  background: rgb(24, 198, 131);
+  transform: translateY(-2px);
+}
+
+main .container .main-first > a:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+footer a:hover {
+  color: #fff;
+}
+footer img:hover {
+  transform: scale(1.01);
+}
